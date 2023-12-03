@@ -25,6 +25,9 @@ GLFWwindow *window = glfwCreateWindow(...);
 init_imgui(window);
 
 ...
+// Add sliders
+imgui_add_f_slider("height", &height, 0.0, 1.0);
+...
 // During the main rendering loop
 while (!glfwWindowShouldClose(window)) {
   ...
